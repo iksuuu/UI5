@@ -1,0 +1,121 @@
+<mvc:View
+   controllerName="sap.ui5.walkthrough.pythonui5.controller.HelloPanel"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   xmlns:l="sap.ui.layout"
+   xmlns:f="sap.ui.layout.form"
+   xmlns:core="sap.ui.core">
+   <Panel
+      headerText="{i18n>helloPanelTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto" >
+      <content>
+
+      <Button
+         text="{i18n>showLLMButtonText}"
+         press=".onShowHello"
+         class="myCustomButton"/>
+
+      <List id="chatList" items="{/messages}" class="chatList">
+            <CustomListItem class="{path: 'author', formatter: 'sap.ui5.walkthrough.pythonui5.controller.HelloPanel.formatter.messageClass'}">
+                <HBox alignItems="Center" justifyContent="Start">
+                    <VBox>
+                        <Text text="{author}" />
+                        <Text text="{message}" wrapping="true" />
+                    </VBox>
+                </HBox>
+            </CustomListItem>
+      </List>
+
+      <Input
+                  id="userInput"
+                  placeholder="Type your message here..."
+                  submit="onSendMessage"
+                  class="myCustomText"
+                  width="50%"
+                  />
+            <Button
+                  text="{i18n>showSendButtonText}"
+                  press="onSendMessage"
+                  class="myCustomButton"
+                  width="auto"
+                  /> <!-- Adjust the width as needed -->
+
+      <FlexBox alignItems="Center">
+         <Button
+            icon="sap-icon://world"
+            text="{i18n>status}"
+            class="sapUiSmallMarginEnd"/>
+         <Text id="status" text="{i18n>connectionStatus}" class="myCustomText" />
+      </FlexBox> 
+
+          <Text text="Difficulties:"/>
+    <List mode="None">
+        <items>
+            <CustomListItem>
+                <HBox>
+                    <Text text="Prompting strategies: " />
+                    <Text text=" Strategies for improving SQL query generation." />
+                </HBox>
+            </CustomListItem>
+            <CustomListItem>
+                <HBox>
+                    <Text text="Query validation: " />
+                    <Text text=" How to validate SQL queries." />
+                </HBox>
+            </CustomListItem>
+            <CustomListItem>
+                <HBox>
+                    <Text text="Large databases: " />
+                    <Text text=" How to interact with DBs with many tables and high-cardinality columns." />
+                </HBox>
+            </CustomListItem>
+        </items>
+    </List>
+    <Text text="Next:"/>
+    <List mode="None">
+        <items>
+            <CustomListItem>
+                <HBox>
+                    <Text text="-Deploy the local UI5 frontend on the BTP Fiori Launchpad." />
+                </HBox>
+            </CustomListItem>
+            <CustomListItem>
+                <HBox>
+                    <Text text="-Implement streaming output." />
+                </HBox>
+            </CustomListItem>
+            <CustomListItem>
+                <HBox>
+                    <Text text="-Enhance the output formatting for tables or SQL queries." />
+                </HBox>
+            </CustomListItem>
+            <CustomListItem>
+                <HBox>
+                    <Text text="-Enhance the output formatting for tables or SQL queries." />
+                </HBox>
+            </CustomListItem>
+        </items>
+    </List>
+
+
+      <FlexBox alignItems="Center">
+         <Text ></Text>
+      </FlexBox>
+      <FlexBox alignItems="Center">
+        <Image src="./model/architecture.png" width="100%" height="100%" />
+      </FlexBox>
+
+      <FlexBox alignItems="Center" class="myCustomText">
+        <Text text="System architecture diagram" textAlign="Center"/>
+      </FlexBox>
+
+      <VBox>
+
+</VBox>
+
+      
+          
+      </content>
+   </Panel>
+</mvc:View>

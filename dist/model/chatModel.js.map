@@ -1,0 +1,1 @@
+{"version":3,"file":"chatModel.js","names":["sap","ui","define","JSONModel","createChatModel","initialData","messages","author","message"],"sources":["chatModel-dbg.js"],"mappings":"AAAAA,IAAIC,GAAGC,OAAO,CACV,+BACD,SAASC,GACR,aAEA,MAAO,CACHC,gBAAiB,WACb,IAAIC,EAAc,CACdC,SAAU,CACN,CACIC,OAAQ,SACRC,QAAS,gCAKrB,OAAO,IAAIL,EAAUE,EACzB,EAER"}

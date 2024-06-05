@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/model/json/JSONModel"],function(e){"use strict";return{createChatModel:function(){var s={messages:[{author:"System",message:"Hello, how can I help you?"}]};return new e(s)}}});
+//# sourceMappingURL=chatModel.js.map

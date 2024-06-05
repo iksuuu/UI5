@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/UIComponent","sap/ui/model/json/JSONModel","sap/ui/model/resource/ResourceModel"],function(e,n,t){"use strict";return e.extend("sap.ui5.walkthrough.pythonui5.Component",{metadata:{interfaces:["sap.ui.core.IAsyncContentCreation"],manifest:"json"},init:function(){e.prototype.init.apply(this,arguments);var i={recipient:{name:"Dialogfragment"}};var o=new n(i);this.setModel(o);var a=new t({bundleName:"sap.ui5.walkthrough.pythonui5.i18n.i18n"});this.setModel(a,"i18n")}})});
+//# sourceMappingURL=Component.js.map

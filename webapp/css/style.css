@@ -1,0 +1,31 @@
+/* Enter your custom styles here */
+html .myAppDemoWT .myCustomButton.sapMBtn {
+    margin-right: 10px;
+}
+
+.myAppDemoWT .myCustomText {
+    margin-right: 10px;
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(3, 98, 26);
+ }
+
+ .chatList {
+    height: 300px;
+    max-height: 600px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9e9;
+ }
+
+ .userMessage {
+    background-color: lightblue;
+}
+
+.systemMessage,
+.sqlMessage {
+    background-color: rgb(70, 177, 17);
+}

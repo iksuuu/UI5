@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(n){"use strict";return n.extend("sap.ui5.walkthrough.pythonui5.controller.App",{onInit:function(){}})});
+//# sourceMappingURL=App.controller.js.map

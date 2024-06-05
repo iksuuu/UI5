@@ -1,0 +1,19 @@
+<mvc:View controllerName="sap.ui5.walkthrough.pythonui5.controller.App"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <App id="app">
+        <Shell>
+		<App class="myAppDemoWT">
+			<pages>
+				<Page title="{i18n>homePageTitle}">
+					<content>
+						<mvc:XMLView viewName="sap.ui5.walkthrough.pythonui5.view.HelloPanel"/>
+						
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+    </App>
+</mvc:View>

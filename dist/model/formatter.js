@@ -1,0 +1,2 @@
+sap.ui.define([],function(){"use strict";return{messageClass:function(e){if(e==="User"){return"userMessage"}else if(e==="System"||e==="SQL"){return"systemMessage"}return""}}});
+//# sourceMappingURL=formatter.js.map
